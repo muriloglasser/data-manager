@@ -1,4 +1,4 @@
-// Example struct to represent data
+// Example struct to represent data.
 public struct DataManagerExampleStruct
 {
     public int id;
