@@ -26,7 +26,9 @@ public class AddData : MonoBehaviour
         });
     }
 
-    // Check for the key press to add data.
+    /// <summary>
+    /// Check for the key press to add data.
+    /// </summary>
     private void CheckDataToAdd()
     {
         // Check if id is a number.
@@ -52,7 +54,10 @@ public class AddData : MonoBehaviour
         });
     }
 
-    // Add data to the DataManager.
+    /// <summary>
+    /// Add data to the DataManager.
+    /// </summary>
+    /// <param name="data"> Data to cache. </param>
     private void Add(DataManagerExampleStruct data)
     {
         // Retrieve any existing data of the same type.

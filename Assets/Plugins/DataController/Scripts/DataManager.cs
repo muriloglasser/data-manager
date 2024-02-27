@@ -13,7 +13,7 @@ using UnityEngine;
 public static class DataManager
 {
     /// <summary>
-    /// Store data dictionary
+    /// Store data dictionary.
     /// </summary>
     private static Dictionary<Type, object> dataStorage;
 

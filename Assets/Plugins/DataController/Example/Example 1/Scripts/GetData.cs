@@ -24,14 +24,18 @@ public class GetData : MonoBehaviour
         });
     }
 
-    // Check for the key press to get data.
+    /// <summary>
+    /// Check for the key press to get data.
+    /// </summary>
     private void CheckDataToGet()
     {
         // Retrieve and display the data.
         Get();
     }
 
-    // Retrieve data from the DataManager.
+    /// <summary>
+    /// Retrieve data from the DataManager.
+    /// </summary>
     private void Get()
     {
         // Retrieve data of the specified type from the DataManager.
