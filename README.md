@@ -1,6 +1,6 @@
 # DataManager Class
 
-`DataManager` is a utility class for managing and caching structured data of various types in Unity. It provides methods to store, retrieve, and remove data items, as well as to check the existence of data of a specific type.
+`DataManager` is a utility class for managing and caching structured data of various types in Unity. It provides methods to store, retrieve, and remove data items, as well as to check the existence of data of a specific type. Additionally, `DataManager` allows for seamless data retrieval between scenes.
 
 ## Table of Contents
 
@@ -55,22 +55,22 @@ public struct DataManagerExampleStruct
 
 ### Adding
 ```csharp
-// Add data to the DataManager
+// Add data to the DataManager.
 private void Add(DataManagerExampleStruct data)
 {
-    // Retrieve any existing data of the same type
+    // Retrieve any existing data of the same type.
     DataManagerExampleStruct loadedData = DataManager.GetData<DataManagerExampleStruct>();
 
-    // Check if data of the specified type already exists in the cache
+    // Check if data of the specified type already exists in the cache.
     if (!DataManager.DataExists<DataManagerExampleStruct>())
         Debug.Log("Data has not been created. \n Created new data cache.");
     else
         Debug.Log("Cached data already exists. \n Save data cache.");
 
-    // Add the new data to the cache
+    // Add the new data to the cache.
     DataManager.AddData<DataManagerExampleStruct>(data);
 
-    // Display information about the saved data
+    // Display information about the saved data.
     Debug.Log("Saved data: \n" +
               "ID: " + data.id +
               ", Distance: " + data.distance +
@@ -80,18 +80,18 @@ private void Add(DataManagerExampleStruct data)
 
 ### Retrieving
 ```csharp
-// Retrieve data from the DataManager
+// Retrieve data from the DataManager.
 private void Get()
 {
-    // Retrieve data of the specified type from the DataManager
+    // Retrieve data of the specified type from the DataManager.
     data = DataManager.GetData<DataManagerExampleStruct>();
 
-    // Check if data of the specified type exists in the cache
+    // Check if data of the specified type exists in the cache.
     if (!DataManager.DataExists<DataManagerExampleStruct>())
         Debug.Log("Data has not been created!");
     else
     {
-        // Display information about the loaded data
+        // Display information about the loaded data.
         Debug.Log("Cached Data Loaded!");
         Debug.Log("Loaded data: \n" +
                   "ID: " + data.id +
