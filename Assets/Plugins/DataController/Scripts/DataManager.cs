@@ -52,15 +52,6 @@ public static class DataManager
     }
 
     /// <summary>
-    /// Retrieves all cached data.
-    /// </summary>
-    /// <returns>A dictionary containing all cached data.</returns>
-    public static Dictionary<Type, object> GetAllData()
-    {
-        return dataStorage; // Return the dictionary containing all cached data.
-    }
-
-    /// <summary>
     /// Removes a cached item.
     /// </summary>
     /// <typeparam name="T">The type of data to remove.</typeparam>
@@ -77,7 +68,7 @@ public static class DataManager
     /// </summary>
     /// <typeparam name="T">The type of data to check.</typeparam>
     /// <returns>True if data of the specified type is cached, otherwise false.</returns>
-    private static bool DataExists<T>() where T : struct
+    public static bool DataExists<T>() where T : struct
     {
         return dataStorage.ContainsKey(typeof(T)); // Check if data of the specified type exists in the cache.
     }
