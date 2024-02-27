@@ -12,28 +12,28 @@
 ### Adding Data
 Adds an item of type T to the data cache. If data of the same type already exists, it is first removed.
 ```csharp
-// Add an item to the data cache
+// Add an item to the data cache.
 DataManager.AddData<T>(data);
 ```
 
 ### Retrieving Data
 Retrieves cached data of the specified type T. Returns default value if no data is found.
 ```csharp
-// Retrieve cached data of type T
+// Retrieve cached data of type T.
 T data = DataManager.GetData<T>();
 ```
 
 ### Removing Data
 Removes cached data of the specified type T.
 ```csharp
-// Remove cached data of type T
+// Remove cached data of type T.
 DataManager.RemoveData<T>();
 ```
 
 ### Checking Data Existence
 Returns true if data of the specified type T exists in the cache; otherwise, returns false.
 ```csharp
-// Check if data of type T exists in the cache
+// Check if data of type T exists in the cache.
 bool exists = DataManager.DataExists<T>();
 ```
 
@@ -43,7 +43,7 @@ Note: This example is available in the Example1 scene. Be sure to check out that
 
 ### Struct
 ```csharp
-// Example struct to represent data
+// Example struct to represent data.
 public struct DataManagerExampleStruct
 {
     public int id;
